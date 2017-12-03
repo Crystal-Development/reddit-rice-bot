@@ -30,7 +30,7 @@ comments.on('comment', (comment) => {
         comment.reply('Lets turn that "(" around horizontally! :)\n- - -\n^^^I ^^^am ^^^a ^^^bot. ^^^| ^^^[Contact ^^^Me](https://www.reddit.com/message/compose/?to=thericebot) ^^^| ^^^[GitHub](https://github.com/Crystal-Development/reddit-rice-bot)');
     }
 
-    if (comment.body.includes('rice')) {
+    if (/\brice\b/g.test(comment.body)) {
         console.log('Reacted to 1 person saying "rice"');
         comment.reply('Heh.\n- - -\n^^^I ^^^am ^^^a ^^^bot. ^^^| ^^^[Contact ^^^Me](https://www.reddit.com/message/compose/?to=thericebot) ^^^| ^^^[GitHub](https://github.com/Crystal-Development/reddit-rice-bot)');
     }
