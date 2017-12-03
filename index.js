@@ -27,7 +27,11 @@ comments.on('comment', (comment) => {
 
     if (comment.body === ':(') {
         console.log('Turned 1 frown horizontally.');
-        console.log(' ');
         comment.reply('Lets turn that "(" around horizontally! :)\n- - -\n^^^I ^^^am ^^^a ^^^bot. ^^^| ^^^[Contact Me](https://www.reddit.com/message/compose/?to=thericebot) ^^^| ^^^[GitHub](https://github.com/Crystal-Development/reddit-rice-bot)');
+    }
+
+    if (comment.body.includes('rice')) {
+        console.log('Reacted to 1 person saying "rice"');
+        comment.reply('Heh.\n- - -\n^^^I ^^^am ^^^a ^^^bot. ^^^| ^^^[Contact Me](https://www.reddit.com/message/compose/?to=thericebot) ^^^| ^^^[GitHub](https://github.com/Crystal-Development/reddit-rice-bot)');
     }
 });
