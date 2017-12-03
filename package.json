@@ -1,0 +1,28 @@
+{
+  "name": "reddit-rice-bot",
+  "version": "1.0.0",
+  "description": "a reddit bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Crystal-Development/reddit-rice-bot.git"
+  },
+  "keywords": [
+    "bot",
+    "reddit"
+  ],
+  "author": "Stebulous",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Crystal-Development/reddit-rice-bot/issues"
+  },
+  "homepage": "https://github.com/Crystal-Development/reddit-rice-bot#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "snoostorm": "0.0.5",
+    "snoowrap": "^1.15.1"
+  }
+}
