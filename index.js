@@ -26,8 +26,8 @@ const comments = client.CommentStream(streamOpts);
 comments.on('comment', (comment) => {
 
     if (comment.body === ':(') {
-        console.log('Turned 1 frown vertically.');
+        console.log('Turned 1 frown horizontally.');
         console.log(' ');
-        comment.reply('Lets turn that "(" around vertically! :)\n\n^^^I ^^^am ^^^a ^^^bot, ^^^created ^^^by ^^^u/Stebulous ^^^| ^^^[GitHub](https://github.com/Crystal-Development/reddit-rice-bot)');
+        comment.reply('Lets turn that "(" around horizontally! :)\n\n^^^I ^^^am ^^^a ^^^bot, ^^^created ^^^by ^^^u/Stebulous ^^^| ^^^[GitHub](https://github.com/Crystal-Development/reddit-rice-bot)');
     }
 });
