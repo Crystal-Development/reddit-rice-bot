@@ -5,7 +5,7 @@ const Snoostorm = require('snoostorm');
 
 // Build Snoowrap and Snoostorm clients
 const r = new Snoowrap({
-    userAgent: 'reddit-bot-example-node',
+    userAgent: 'TheRiceBot',
     clientId: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
     username: process.env.REDDIT_USER,
