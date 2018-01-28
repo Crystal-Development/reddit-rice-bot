@@ -15,7 +15,7 @@ const client = new Snoostorm(r);
 
 // Configure options for stream: subreddit & results per query
 const streamOpts = {
-    subreddit: 'BotTestingGrounds',
+    subreddit: 'thericefields',
     results: 25
 };
 
@@ -24,6 +24,10 @@ const comments = client.CommentStream(streamOpts);
 
 // On comment, perform whatever logic you want to do
 comments.on('comment', (comment) => {
+
+    if (comment.author === 'TheRiceBot') {
+	return;
+}
 
     if (comment.body === ':(') {
         console.log('Turned 1 frown horizontally.');
